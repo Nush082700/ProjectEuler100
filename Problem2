@@ -1,0 +1,18 @@
+counter1 = 1
+counter2 = 2
+s = 2
+#4000000
+while (counter1<4000000 or counter2<4000000):
+    # print("the terms are")
+    # print(counter1)
+    # print(counter2)
+    new_term = counter1+counter2
+    if (new_term%2 == 0 and new_term<4000000):
+        s += new_term
+    if counter1<counter2:
+        counter1 = new_term
+    else:
+        counter2 = new_term
+# print("the sum is")
+print(s)
+    
