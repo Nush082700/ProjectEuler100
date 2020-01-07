@@ -1,0 +1,14 @@
+import math
+n1 = int(input("Enter a number"))
+l_fact = 1
+
+while (n1%2 == 0):
+    n1 = n1/2
+    l_fact = 2
+
+for i in range(3,int(math.sqrt(n1)+1),2):
+   while(n1%i==0):
+       n1 = n1/i
+       l_fact = i
+print("the largest prime factor is")
+print(l_fact)
