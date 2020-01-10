@@ -1,0 +1,8 @@
+import math
+# num = input("Enter the number of numbers")
+num = 100
+sum_of_square = (num * (num+1) * (2*num + 1))//6
+square_of_sum = int(math.pow((num * (num+1))/2,2))
+
+print ("The difference is")
+print (abs(sum_of_square-square_of_sum))
